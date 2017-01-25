@@ -1,6 +1,6 @@
 {
-    "name": "51systems/doctrine-encrypt-module",
-    "description": "ZF2 Module for Doctrine2 field encryption",
+    "name": "nfntynl/doctrine-encrypt-module",
+    "description": "Fork of 51systems/doctrine-encrypt-module to support doctrine module ^1.2",
     "type": "library",
     "license": "MIT",
     "keywords": [
@@ -9,25 +9,30 @@
         "Doctrine",
         "Encryption"
     ],
-    "homepage": "https://github.com/51systems/doctrine-encrypt-module",
+    "homepage": "https://github.com/nfntynl/doctrine-encrypt-module",
     "authors": [
+        {
+            "name": "Erwin Kloosterboer",
+            "email": "erwin@nfnty.nl"
+        },
         {
             "name": "Dustin Thomson",
             "email": "dthomson@51systems.com"
         }
     ],
     "require": {
-        "php": ">=5.3",
+        "php": "^5.6 || ^7.0",
         "zendframework/zend-crypt": ">=2.2",
-        "doctrine/doctrine-module": "0.*",
-        "51systems/doctrine-encrypt" : "~5.0"
+        "doctrine/doctrine-module": "^1.2",
+        "51systems/doctrine-encrypt" : "~5.0",
+        "zendframework/zend-stdlib": ">=2.5.0",
+        "container-interop/container-interop":"^1.0.0",
+        "zendframework/zend-servicemanager":">=2.0.0"
     },
     "autoload": {
         "psr-0": {
             "DoctrineEncryptModule": "src/"
         },
         "classmap" : ["Module.php"]
-    },
-    "bin": [
-    ]
+    }
 }
