@@ -2,11 +2,11 @@
 Package adds Doctrine Module support to doctrine-encrypt module
 
 ## Installation
-Add `51systems/doctrine-encrypt-module` to your composer manifest.
+Add `nfntynl/doctrine-encrypt-module` to your composer manifest.
 ```js
 {
     "require": {
-        "51systems/doctrine-encrypt-module": "1.*"
+        "nfntynl/doctrine-encrypt-module": "^1.2.0"
     }
 }
 ```
